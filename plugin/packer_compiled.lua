@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/dracula",
     url = "https://github.com/dracula/vim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["fzf.vim"] = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/fzf.vim",

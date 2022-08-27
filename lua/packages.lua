@@ -10,6 +10,7 @@ require('packer').startup(function(use)
     use 'preservim/tagbar' -- Ctags
     use 'vim-airline/vim-airline' -- status bar
     use 'ryanoasis/vim-devicons' -- icons for NERDTree (must be loaded last)
+    use 'mattn/emmet-vim' -- html emmets
 end)
 
 return false
