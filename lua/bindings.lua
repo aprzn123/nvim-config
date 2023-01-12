@@ -1,5 +1,5 @@
 local map = vim.api.nvim_set_keymap
-local opts = { noremap = true }
+local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 map('n', '<m-n>', '"zdd"zp', opts) -- Move line down
 map('n', '<m-e>', '"zdd"zkP', opts) -- Move line up

@@ -5,11 +5,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     command = "source $MYVIMRC"
 }) -- reload config file on save
 
-vim.api.nvim_create_autocmd("VimEnter", {
-    group = "aprzn",
-    pattern = {"*"},
-    command = "NERDTree"
-}) -- open nerdtree on start
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--     group = "aprzn",
+--     pattern = {"*"},
+--     command = "NERDTree"
+-- }) -- open nerdtree on start
 
 vim.api.nvim_create_autocmd("CursorHold", {
     group = "aprzn",
