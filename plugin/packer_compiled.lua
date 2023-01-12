@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
+  ["vim-godot"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-godot",
+    url = "https://github.com/habamax/vim-godot"
+  },
   ["vim-openscad"] = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-openscad",

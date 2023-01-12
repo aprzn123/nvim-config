@@ -9,8 +9,9 @@ require('packer').startup(function(use)
     use 'preservim/nerdtree' -- NERDTree: File Viewer
     use 'preservim/tagbar' -- Ctags
     use 'vim-airline/vim-airline' -- status bar
-    use 'ryanoasis/vim-devicons' -- icons for NERDTree (must be loaded last)
     use 'mattn/emmet-vim' -- html emmets
+    use 'habamax/vim-godot' -- GDScript
+    use 'ryanoasis/vim-devicons' -- icons for NERDTree (must be loaded last)
 end)
 
 return false
