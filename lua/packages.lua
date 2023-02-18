@@ -16,10 +16,10 @@ require('packer').startup(function(use)
     use 'vim-airline/vim-airline' -- status bar
     use 'mattn/emmet-vim' -- html emmets
     use 'm4xshen/autoclose.nvim' -- autoclosing brackets, not sure if I'll keep it
+    use 'tpope/vim-surround' -- surround text with brackets
+    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'} -- better folding
     use 'tpope/vim-fugitive' -- git
     use 'ryanoasis/vim-devicons' -- icons for NERDTree (must be loaded last)
 end)
-
-require('autoclose').setup({})
 
 return false

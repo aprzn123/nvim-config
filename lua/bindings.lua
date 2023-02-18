@@ -21,5 +21,8 @@ map('i', '<s-tab>', 'coc#pum#visible() ? coc#pum#prev(1) : "\\<C-h>"',
     {noremap = true, silent = true, expr = true}) -- prev item in coc list
 map('n', '<F2>', '<Plug>(coc-rename)', opts) -- rename
 map('n', '<F8>', ':TagbarToggle<cr>', opts) -- show ctags
+vim.keymap.set('n', 'zR', require('ufo').openAllFolds) -- ufo
+vim.keymap.set('n', 'zM', require('ufo').closeAllFolds) -- ufo
+
 
 return false

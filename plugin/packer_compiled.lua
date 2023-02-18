@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/nord-vim",
     url = "https://github.com/arcticicestudio/nord-vim"
   },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
   ["onedark.vim"] = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/onedark.vim",
@@ -128,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["promise-async"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
   },
   tagbar = {
     loaded = true,
@@ -158,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-openscad",
     url = "https://github.com/sirtaj/vim-openscad"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   vimtex = {
     loaded = true,

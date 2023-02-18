@@ -10,4 +10,14 @@ vim.g.termguicolors = true -- better colors
 vim.g.gruvbox_italic = 1 -- gruvbox can use italic font
 vim.cmd("colorscheme onedark") -- colors
 
+-- ufo
+vim.o.foldcolumn = '1'
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+require('ufo').setup()
+
+-- autoclose
+require('autoclose').setup({})
+
 return false
