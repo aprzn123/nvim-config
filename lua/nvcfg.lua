@@ -8,7 +8,12 @@ vim.g.airline_powerline_fonts = 1 -- nice icons for airline
 vim.g.wrap = false -- don't wrap lines
 vim.g.termguicolors = true -- better colors
 vim.g.gruvbox_italic = 1 -- gruvbox can use italic font
-vim.cmd("colorscheme onedark") -- colors
+
+-- load colorscheme
+local file = io.open(vim.fn.stdpath('config') .. "/colorscheme", "r")
+local cs = file:read("l")
+file:close()
+vim.cmd("colorscheme " .. cs)
 
 -- ufo
 vim.o.foldcolumn = '1'

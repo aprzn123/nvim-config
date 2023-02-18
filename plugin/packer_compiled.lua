@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["fzf.vim"] = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/fzf.vim",
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-godot"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-godot",
+    url = "https://github.com/habamax/vim-godot"
   },
   ["vim-openscad"] = {
     loaded = true,

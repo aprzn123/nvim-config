@@ -23,6 +23,7 @@ map('n', '<F2>', '<Plug>(coc-rename)', opts) -- rename
 map('n', '<F8>', ':TagbarToggle<cr>', opts) -- show ctags
 vim.keymap.set('n', 'zR', require('ufo').openAllFolds) -- ufo
 vim.keymap.set('n', 'zM', require('ufo').closeAllFolds) -- ufo
-
+map('n', '<leader>cd', ':set background=dark<cr>', opts) -- set dark mode
+map('n', '<leader>cl', ':set background=light<cr>', opts) -- set light mode
 
 return false
