@@ -1,5 +1,5 @@
 local map = vim.api.nvim_set_keymap
-local opts = { noremap = true }
+local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 map('n', '<m-n>', '"zdd"zp', opts) -- Move line down
 map('n', '<m-e>', '"zdd"zkP', opts) -- Move line up
@@ -21,5 +21,7 @@ map('i', '<s-tab>', 'coc#pum#visible() ? coc#pum#prev(1) : "\\<C-h>"',
     {noremap = true, silent = true, expr = true}) -- prev item in coc list
 map('n', '<F2>', '<Plug>(coc-rename)', opts) -- rename
 map('n', '<F8>', ':TagbarToggle<cr>', opts) -- show ctags
+map('n', '<leader>cd', ':set background=dark<cr>', opts) -- set dark mode
+map('n', '<leader>cl', ':set background=light<cr>', opts) -- set light mode
 
 return false
