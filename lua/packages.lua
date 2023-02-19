@@ -16,6 +16,13 @@ require('packer').startup(function(use)
     use 'sirtaj/vim-openscad' -- OpenSCAD syntax highlighting, etc.
     use 'vlelo/arduino-helper.nvim' -- Arduino
     use 'habamax/vim-godot' -- GDScript
+    use {
+        'ModProg/cargo.nvim', 
+        run = 'makers release',
+        config = function()
+            require"cargo".setup()
+        end
+    }
 
     use 'junegunn/fzf.vim' -- fuzzy finder
     use 'tpope/vim-commentary' -- Comment things
