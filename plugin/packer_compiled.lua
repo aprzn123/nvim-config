@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/nvim-ufo",
     url = "https://github.com/kevinhwang91/nvim-ufo"
   },
+  ["nvim-whichkey-setup.lua"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/nvim-whichkey-setup.lua",
+    url = "https://github.com/AckslD/nvim-whichkey-setup.lua"
+  },
   ["onedark.vim"] = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/onedark.vim",
@@ -183,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-which-key",
+    url = "https://github.com/liuchengxu/vim-which-key"
   },
   vimtex = {
     loaded = true,
