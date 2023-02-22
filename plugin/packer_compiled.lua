@@ -84,6 +84,12 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
     url = "https://github.com/m4xshen/autoclose.nvim"
   },
+  ["cargo.nvim"] = {
+    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ncargo\frequire\0" },
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/cargo.nvim",
+    url = "https://github.com/ModProg/cargo.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -202,6 +208,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: cargo.nvim
+time([[Config for cargo.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ncargo\frequire\0", "config", "cargo.nvim")
+time([[Config for cargo.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

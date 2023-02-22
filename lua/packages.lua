@@ -17,6 +17,13 @@ require('packer').startup(function(use)
     use 'vlelo/arduino-helper.nvim' -- Arduino
     use 'habamax/vim-godot' -- GDScript
     use 'mattn/emmet-vim' -- html emmets
+    use {
+        'ModProg/cargo.nvim', 
+        run = 'makers release',
+        config = function()
+            require"cargo".setup()
+        end
+    }
 
     use {'AckslD/nvim-whichkey-setup.lua', requires={ 'liuchengxu/vim-which-key' }} -- keybind helper popup
     use 'junegunn/fzf.vim' -- fuzzy finder
