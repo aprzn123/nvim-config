@@ -8,6 +8,8 @@ vim.g.airline_powerline_fonts = 1 -- nice icons for airline
 vim.g.wrap = false -- don't wrap lines
 vim.g.termguicolors = true -- better colors
 vim.g.gruvbox_italic = 1 -- gruvbox can use italic font
+vim.g.bf_array_mode = 2 -- cyclic brainfuck memory
+vim.g.bf_value_mode = 2 -- cyclic brainfuck values
 
 -- load colorscheme
 local file = io.open(vim.fn.stdpath('config') .. "/colorscheme", "r")
