@@ -22,6 +22,7 @@ require('packer').startup(function(use)
     use 'sirtaj/vim-openscad' -- OpenSCAD syntax highlighting, etc.
     use 'vlelo/arduino-helper.nvim' -- Arduino
     use 'habamax/vim-godot' -- GDScript
+    use 'fruit-in/brainfuck-vim' -- brainfuck
     use 'mattn/emmet-vim' -- html emmets
     use {
         'ModProg/cargo.nvim', 
