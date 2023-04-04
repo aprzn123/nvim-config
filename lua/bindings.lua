@@ -13,10 +13,18 @@ map('n', '<F2>', '<Plug>(coc-rename)', opts) -- rename
 map('n', '<F8>', '<Cmd>TagbarToggle<cr>', opts) -- show ctags
 vim.keymap.set('n', 'zR', require('ufo').openAllFolds) -- ufo
 vim.keymap.set('n', 'zM', require('ufo').closeAllFolds) -- ufo
+vim.keymap.set('n', '<c-->', function()
+    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * 0.9
+end)
+vim.keymap.set('n', '<c-=>', function()
+    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * 1.1
+end)
+
+
+vim.g.tagbar_map_showproto = '<C-Space>' -- remove tagbar space bar conflict
+
 
 -- whichkey
-vim.opt.timeoutlen = 100
-vim.g.which_key_timeout = 100
 local wk = require('whichkey_setup')
 wk.config{
     hide_statusline = true,
@@ -49,6 +57,19 @@ wk.register_keymap('leader', {
     l = {
         name = '+latex',
         c = {'<Cmd>VimtexCompile<cr>', 'toggle compile'},
+    },
+    b = {
+        name = '+buffer',
+        m = {'<c-w>h', 'left'},
+        n = {'<c-w>j', 'down'},
+        e = {'<c-w>k', 'up'},
+        i = {'<c-w>l', 'right'},
+        M = {'<c-w>H', 'move left'},
+        N = {'<c-w>J', 'move down'},
+        E = {'<c-w>K', 'move up'},
+        I = {'<c-w>L', 'move right'},
+
+        t = {'<cmd>Telescope buffers<cr>', 'goto fuzzy'},
     },
 })
 

@@ -8,6 +8,12 @@ require('packer').startup(function(use)
     use 'joshdick/onedark.vim'
     use 'morhetz/gruvbox'
     use 'sainnhe/everforest'
+    use 'sainnhe/edge'
+    use 'edeneast/nightfox.nvim'
+    use 'catppuccin/vim'
+    use 'drewtempelmeyer/palenight.vim'
+    use 'ghifarit53/tokyonight-vim'
+    use 'hzchirs/vim-material'
 
     -- Language Support
     use { 'neoclide/coc.nvim', branch = 'release' } -- LSPs
@@ -25,6 +31,10 @@ require('packer').startup(function(use)
         end
     }
 
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      requires = {{'nvim-lua/plenary.nvim'}}
+    }
     use {'AckslD/nvim-whichkey-setup.lua', requires={ 'liuchengxu/vim-which-key' }} -- keybind helper popup
     use 'junegunn/fzf.vim' -- fuzzy finder
     use 'tpope/vim-commentary' -- Comment things
