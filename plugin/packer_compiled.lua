@@ -245,6 +245,11 @@ _G.packer_plugins = {
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-which-key",
     url = "https://github.com/liuchengxu/vim-which-key"
   },
+  ["vim-xonsh"] = {
+    loaded = true,
+    path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vim-xonsh",
+    url = "https://github.com/meatballs/vim-xonsh"
+  },
   vimtex = {
     loaded = true,
     path = "/home/aprzn/.local/share/nvim/site/pack/packer/start/vimtex",

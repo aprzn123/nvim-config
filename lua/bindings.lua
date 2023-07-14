@@ -53,7 +53,11 @@ wk.register_keymap('leader', {
     },
     e = {'<Cmd>CocDiagnostics<cr>', 'errors'},
     h = {'<Cmd>call CocActionAsync("doHover")<cr>', 'hover'},
-    q = {'<Plug>(coc-fix-current)', 'quick fix'},
+    q = {
+      name = "+modify",
+      q = {'<Plug>(coc-fix-current)', 'quick fix'},
+      c = {'<Plug>(coc-codeaction-selected)', 'code actions'},
+    },
     l = {
         name = '+latex',
         c = {'<Cmd>VimtexCompile<cr>', 'toggle compile'},

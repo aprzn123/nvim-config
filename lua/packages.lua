@@ -20,6 +20,7 @@ require('packer').startup(function(use)
     use 'preservim/tagbar' -- Ctags
     use 'lervag/vimtex' -- LaTeX
     use 'sirtaj/vim-openscad' -- OpenSCAD syntax highlighting, etc.
+    use 'meatballs/vim-xonsh' -- xsh syntax highlighting
     use 'vlelo/arduino-helper.nvim' -- Arduino
     use 'habamax/vim-godot' -- GDScript
     use 'fruit-in/brainfuck-vim' -- brainfuck
